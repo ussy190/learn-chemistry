@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chemistry Learning Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+if(!localStorage.getItem("role")){
+location="login.html";
+}
+</script>
+
+<header>
+<h1>🧪 Chemistry Learning Portal</h1>
+<p>SS1 • SS2 • SS3</p>
+<button onclick="toggleDark()">🌙</button>
+<button onclick="logout()">Logout</button>
+</header>
+
+<nav>
+<button onclick="load('home')">Home</button>
+<button onclick="load('ss1')">SS1</button>
+<button onclick="load('ss2')">SS2</button>
+<button onclick="load('ss3')">SS3</button>
+<button onclick="load('quiz')">Quiz</button>
+<button onclick="load('exam')">WAEC / NECO</button>
+<button onclick="load('ai')">AI Tutor</button>
+<button onclick="load('progress')">Progress</button>
+</nav>
+
+<main id="content"></main>
+
+<script src="script.js"></script>
+</body>
+</html>
